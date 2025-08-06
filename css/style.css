@@ -35,5 +35,16 @@
 }
 .image-wraper{
     position: relative;
+    height: 150px;
+}
 
+
+/* new animation styles */
+.image-new{
+    height: 100px;
+    animation: carnew 6s infinite alternate; 
+}
+@keyframes carnew{
+    from{transform: translateX(0px);}
+    to{transform: translateX(700px);}
 }
