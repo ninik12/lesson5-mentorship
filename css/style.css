@@ -1,0 +1,39 @@
+.wraper{
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+    position: relative;
+    transition: all 2s;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 2s;
+}
+.wraper:hover{
+    background-color: chartreuse;
+}
+.box:hover{
+    background-color: brown;
+    width: 250px;
+    transform: translate(-50%,-50%) rotate(0deg);;
+}
+/* car animation styles */
+.car-image{
+    height: 100px;
+    position: absolute;
+    animation: carmove 5s infinite ease-out 1s alternate;
+}
+@keyframes carmove {
+    from{left: 0px;}
+    to{left: 800px;}
+}
+.image-wraper{
+    position: relative;
+
+}
